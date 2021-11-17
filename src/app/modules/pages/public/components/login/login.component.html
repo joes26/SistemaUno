@@ -1,0 +1,54 @@
+<div class="customCardLogin">
+    <div class="card">
+      <div class="card-body customCardBodyLogin">
+        <div class="row">
+          <div class="form-group TextAlignC Bold">
+            <label class="FontSize25p TittleLogin">{{tittle}}</label>
+          </div>
+        </div>
+        <div class="justify-content-center row">
+          <img class="customImageLogin" alt="UserLogin" src="./assets/images/sociedad/FE05.png">
+        </div>
+        <div class="row">
+          <div class="form-group TextAlignC Bold">
+            <label class="FontSize25p">Inicio de Sesión</label>
+          </div>
+        </div>
+        <br />
+        <form [formGroup]="loginForm" (submit)="loginForm.valid && onSubmit()">
+          <div class="input-group mb-3">
+            <span class="input-group-text customIcon">
+              <i class="fas fa-user"></i>
+            </span>
+            <input maxlength="20" formControlName="username" class="form-control" name="username"
+                   placeholder="Usuario" autofocus required>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text customIcon">
+              <i class="fa fa-key"></i>
+            </span>
+            <input maxlength="20" formControlName="password" class="form-control" name="password"
+                   [type]="fieldTextType ? 'text' : 'password'" placeholder="Contraseña" />
+              <span class="input-group-text customIcon" (click)="toggleFieldTextType()">   
+                <i id="viewpassword" class="fas fa-eye" style="cursor: pointer;"></i>
+              </span>
+                <!--<i class="{{icon1}}" style="cursor: pointer;"></i>-->
+                <!--<i class="fas " [ngClass]="{'fa-eye': !fieldTextType, 'fa-eye-slash': fieldTextType}" aria-hidden="true"></i>-->
+                <!--<i class="fas" [ngClass]="fieldTextType? 'fa-eye-slash' : 'fa-eye'" style="cursor: pointer;"></i>-->
+                <!--<i class="fas fa-eye" *ngShow="fieldTextType" style="cursor: pointer"></i>-->
+                <!--<i class="fas fa-eye-slash" *ngShow="!fieldTextType" style="cursor: pointer"></i>-->
+                <!--<i [class]="prueba(fieldTextType)" ></i>-->
+                <!--<i class="fas fa-eye" [ngClass]="fieldTextType?'eye':'eye-slash'" ></i>-->
+          </div>
+          <div class="form-control-group TextAlignC">
+            <button class="nbButton" [class.nbButtondisabled]="!loginForm.valid"
+                    fullWidth status="success" [disabled]="!loginForm.valid || loading">
+              <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+              INGRESAR
+            </button>
+          </div>
+        </form>
+      </div> 
+    </div>
+  </div>
+  

@@ -1,0 +1,142 @@
+/*
+$primary: var(--primary-color);
+$primary-hover: var(--primary-hover-color);
+$primary-text: var(--primary-text-color);
+*/
+.color_Ferreyros {
+  color: white !important;
+  background-color: #F2BC12 !important;
+  border-color: #F2BC12 !important;
+}
+
+.color_Ferrycorp {
+  color: white !important;
+  background-color: #015c1b !important;
+  border-color: #015c1b !important;
+}
+
+#sidebar-wrapper {
+  width: 300px;
+  z-index: 2;
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  background-color: #2F353A !important;
+  display: block;
+}
+
+.sidebar-heading {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.btn-primary {
+  color: white;
+  background-color: white;
+  border-color: white;
+}
+
+.user-information {
+  width: 90%;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+
+#page-content-wrapper .navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.list-group-item-action {
+  color: white;
+}
+
+.navbar {
+  padding: .2rem .2rem !important;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(189,183,189,1);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(189,183,189,1);
+  box-shadow: 0px 0px 5px 5px rgba(189,183,189,1);
+}
+
+.nav {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+  margin: 0;
+  -webkit-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+.nav-link {
+  font-size: 12px;
+  display: block;
+  padding: .75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  background: 0 0;
+}
+
+.item-sidebar {
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.application-name {
+  color: white;
+  text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.ocultarToggleMenu {
+  display: none !important;
+}
+/*
+.nav-link:hover {
+  background-color: $primary-hover !important;
+}
+
+.nav-link.active {
+  color: #fff;
+  background: #3a4248;
+}
+
+.taller-primary {
+  color: $primary-text !important;
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+
+::ng-deep .primary-button {
+  color: $primary-text !important;
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+
+::ng-deep .primary-button:hover {
+  color: $primary-text !important;
+  background-color: $primary-hover !important;
+  border-color: $primary-hover !important;
+}
+*/

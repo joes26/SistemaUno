@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+.contentConfig{
+    width:90px;
+    height:240px;
+    position:absolute;
+    right:0px;
+    top: 0px;
+  }
+  .buttonConfig{
+    width:40px;
+    height:40px;
+    border-radius:100%;
+    background:#ffffff;
+    right:0;
+    top: 0;
+    position:absolute;
+    margin-right:10px;
+    margin-top:10px;
+    padding-bottom: 5px !important;
+    border:none;
+    outline:none;
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;  
+  }
+  
+.TextAlignC {
+    text-align: center !important;
+}
+
+.Bold {
+    font-weight: bold !important;
+}
+
+.FontSize25p {
+    font-size: 25px !important;
+}
+
+.TittleLogin {
+    color: #0b56b8d7 !important;
+}
